@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Design tokens ด้วย @theme (v4 syntax) */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;      /* slate-900 */
+  --color-muted-foreground: #64748b;
+  --color-card: #ffffff;
+  --color-border: #e5e7eb;
+
+  /* สีแบรนด์ (เอาไว้ใช้แทน #ff7b00 / #ff4500 ถ้าอยาก) */
+  --color-brand-500: #ff7b00;
+  --color-brand-600: #ff4500;
+}
+
+/* toggle .dark ที่ <html> ได้เลย (โค้ดคุณทำไว้แล้ว) */
+:root.dark, .dark {
+  --color-background: #0b0b0c;
+  --color-foreground: #e5e7eb;
+  --color-muted-foreground: #9aa4b2;
+  --color-card: #0f1115;
+  --color-border: #1f2937;
+}
